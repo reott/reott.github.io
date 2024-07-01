@@ -100,6 +100,15 @@
         .section.active {
             display: block;
         }
+        .cv-entry {
+            margin-bottom: 1em;
+        }
+        .cv-entry p {
+            margin: 0.2em 0;
+        }
+        .indent {
+            margin-left: 1em;
+        }
     </style>
 </head>
 <body>
@@ -149,22 +158,27 @@
     <div id="lebenslauf" class="content section">
         <h2>Lebenslauf</h2>
         <p><strong>Bildung</strong></p>
-        <p>seit 09/2022</p>
-        <p>Student Bachelor Software Engineering</p>
-        <p>Hochschule Heilbronn</p>
-        <br>
-        <p>06/2016</p>
-        <p>Allgemeine Hochschulreife</p>
-        <p>Friedrich-von-Alberti-Gymnasium</p>
-        <br>
+        <div class="cv-entry">
+            <p>seit 09/2022</p>
+            <p class="indent">Student Bachelor Software Engineering</p>
+            <p class="indent">Hochschule Heilbronn</p>
+        </div>
+        <div class="cv-entry">
+            <p>06/2016</p>
+            <p class="indent">Allgemeine Hochschulreife</p>
+            <p class="indent">Friedrich-von-Alberti-Gymnasium</p>
+        </div>
         <p><strong>Berufserfahrung</strong></p>
-        <p>05/2019 - 07/2022</p>
-        <p>Mitarbeiter im Verkauf</p>
-        <p>Edeka Dallmann e.K.</p>
-        <br>
-        <p>08/2018 - 04/2019</p>
-        <p>Verkäufer</p>
-        <p>Bäckerei Schwarz GmbH & Co. KG</p>
+        <div class="cv-entry">
+            <p>05/2019 - 07/2022</p>
+            <p class="indent">Mitarbeiter im Verkauf</p>
+            <p class="indent">Edeka Dallmann e.K.</p>
+        </div>
+        <div class="cv-entry">
+            <p>08/2018 - 04/2019</p>
+            <p class="indent">Verkäufer</p>
+            <p class="indent">Bäckerei Schwarz GmbH & Co. KG</p>
+        </div>
     </div>
     <script>
         function showSection(sectionId) {
