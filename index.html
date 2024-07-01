@@ -15,9 +15,15 @@
         .navbar {
             background-color: #333;
             overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
         .navbar a {
-            float: left;
             display: block;
             color: #f2f2f2;
             text-align: center;
@@ -30,6 +36,7 @@
         }
         .content {
             padding: 2em;
+            margin-top: 60px; /* Adjust this if the navbar height changes */
         }
         .intro {
             display: flex;
@@ -128,31 +135,16 @@
     </div>
     <div id="lebenslauf" class="content section">
         <h2>Lebenslauf</h2>
-        <p><strong>Name:</strong> René</p>
-        <p><strong>Geburtsdatum:</strong> 1. Januar 1995</p>
         <p><strong>Bildung:</strong></p>
         <ul>
-            <li>Bachelor in Software Engineering, Hochschule Heilbronn, 2023</li>
-            <li>Abitur, Gymnasium XYZ, 2014</li>
+            <li>seit 09/2022: Student Bachelor Software Engineering, Hochschule Heilbronn</li>
+            <li>06/2016: Allgemeine Hochschulreife, Friedrich-von-Alberti-Gymnasium</li>
         </ul>
         <p><strong>Berufserfahrung:</strong></p>
         <ul>
-            <li>Softwareentwickler, Firma ABC, 2023 - heute</li>
-            <li>Praktikum, Firma DEF, 2022</li>
+            <li>05/2019 - 07/2022: Mitarbeiter im Verkauf, Edeka Dallmann e.K.</li>
+            <li>08/2018 - 04/2019: Verkäufer, Bäckerei Schwarz GmbH & Co. KG</li>
         </ul>
-        <p><strong>Kenntnisse:</strong></p>
-        <ul>
-            <li>Programmiersprachen: C#, Python, Java</li>
-            <li>Tools: Unity, Git, Docker</li>
-            <li>Frameworks: .NET, React</li>
-        </ul>
-        <p><strong>Projekte:</strong></p>
-        <ul>
-            <li>3D Cave Generation</li>
-            <li>KI-Antrag Bearbeitung</li>
-            <li>Demo Project</li>
-        </ul>
-        <p><strong>Hobbys:</strong> Gaming, Wandern, Lesen</p>
     </div>
     <script>
         function showSection(sectionId) {
