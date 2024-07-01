@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <style>
+        :root {
+            color-scheme: light dark;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #101015 !important;
+            }
+            .project {
+                background-color: #17171f !important;
+                border-color: #202020 !important;
+            }
+        }
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -13,7 +25,7 @@
             background-color: #f7f7f7;
         }
         .navbar {
-            background-color: #333;
+            background-color: #17171f;
             overflow: hidden;
             display: flex;
             justify-content: center;
