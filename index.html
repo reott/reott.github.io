@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <style>
+        :root {
+            color-scheme: light dark;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #101015 !important;
+            }
+            .project {
+                background-color: #17171f !important;
+                border-color: #202020 !important;
+            }
+        }
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -13,7 +25,7 @@
             background-color: #f7f7f7;
         }
         .navbar {
-            background-color: #333;
+            background-color: #17171f;
             overflow: hidden;
             display: flex;
             justify-content: center;
@@ -27,7 +39,7 @@
             display: block;
             color: #f2f2f2;
             text-align: center;
-            padding: 14px 16px;
+            padding: 0.875rem 1rem;
             text-decoration: none;
         }
         .navbar a:hover {
@@ -36,7 +48,7 @@
         }
         .content {
             padding: 2em;
-            margin-top: 60px; /* Adjust this if the navbar height changes */
+            margin-top: 3.75rem;
         }
         .intro {
             display: flex;
@@ -46,8 +58,8 @@
         .intro img {
             border-radius: 50%;
             margin-right: 2em;
-            width: 150px;
-            height: 150px;
+            width: 9.375rem;
+            height: 9.375rem;
         }
         .project {
             background-color: #fff;
@@ -66,7 +78,8 @@
         video {
             max-width: 100%;
             height: auto;
-            width: 400px;
+            width: 25rem;
+            filter: drop-shadow(0 0 0.5rem #000);
         }
         .project-info {
             display: flex;
@@ -74,7 +87,7 @@
         }
         .project-info span {
             flex-shrink: 0;
-            width: 120px;
+            width: 7.5rem;
             font-weight: bold;
         }
         .project-info::after {
