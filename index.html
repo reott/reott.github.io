@@ -43,7 +43,7 @@
         video {
         max-width: 100%;
         height: auto;
-        width: 400px; /* Maximum width */
+        width: 400px;
         }
     </style>
 </head>
@@ -59,24 +59,32 @@
         </div>
         <div class="project">
             <div class="project-header">3D Cave Generation</div>
-            <video controls autoplay loop muted playsinline>
+            <video autoplay loop muted playsinline>
                 <source src="CaveGeneration.webm" type="video/webm">
                 Your browser does not support the video tag.
             </video>
             <p>Ziel: Generierung einer Höhle mithilfe von Algorithmen</p>
             <p>Technologien: Unity, C#, Shader Graph</p>
             <p>Zeit: 1 Woche</p>
-            <p>Details: Zur Generierung des Mesh wurde Perlin Noise in Verbindung mit Marching Cubes benutzt. Im Bereich Texturen konnte ich Erfahrungen mit UV Mapping (Code) und Triplanar Mapping (Shader Graph) sammeln. Ein simpler Spawn-Algorithmus verteilt Kristalle, Pflanzen, etc. gleichmäßig nach bestimmten Regeln in der Höhle. Einen kleinen Einblick in das Particle System von Unity konnte ich hier auch gewinnen.</p>
+            <p>Details: Zur Generierung des Mesh wurde Perlin Noise in Verbindung mit Marching Cubes benutzt. Im Bereich Texturen konnte ich Erfahrungen mit UV Mapping (per Code) und Triplanar Mapping (per Shader Graph) sammeln. Ein simpler Spawn-Algorithmus verteilt Kristalle, Pflanzen, etc. gleichmäßig nach bestimmten Regeln in der Höhle. Einen kleinen Einblick in das Particle System von Unity konnte ich hier auch gewinnen.</p>
         </div>
         <div class="project">
-            <div class="project-header">Project Two</div>
-            <img src="project-two-image.jpg" alt="Project Two Image">
-            <p>Details about Project Two. This project focused on...</p>
+            <div class="project-header">Forschungsprojekt Nutzung von KI zur Bearbeitung von Anträgen</div>
+            <p>Ziel: Erarbeiten wie KI zur Unterstützung von Sachbearbeitern beim Bearbeiten von Anträgen eingesetzt werden kann</p>
+            <p>Technologien: Python, LangChain, ChatGPT API</p>
+            <p>Zeit: mehrere Wochen</p>
+            <p>Details: Zusammen mit einem kleinen Team haben wir einen Prozess unseres Kunden analysiert und Ideen erarbeitet, wie KI hier unterstützend eingesetzt werden kann. Als Ergebnis dieses Projekts haben wir ein kleines Tool entwickelt, welches Informationen aus Anträgen mit Retrieval Augmented Generation ziehen kann und diese in eine Vorlage zur Weiterverarbeitung einfügt.</p>
         </div>
         <div class="project">
-            <div class="project-header">Project Three</div>
-            <img src="project-three-image.jpg" alt="Project Three Image">
-            <p>Details about Project Three. The main goal of this project was...</p>
+            <div class="project-header">Demo Project</div>
+            <video autoplay loop muted playsinline>
+                <source src="Demo.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+            <p>Ziel: Erstellen von einzelnen Features wie Build & Destroy System à la Fortnite, Animierte Bots und einer simplen Map</p>
+            <p>Technologien: Unity, C#, ProBuilder</p>
+            <p>Zeit: 4 Tage</p>
+            <p>Details: Bei diesem Projekt hab ich einige der Grundlagen der Unity Engine gelernt, wie z.B. Raycasts, Bewegen von Bots über ein NavMesh und den Umgang mit dem ProBuilder Tool.</p>
         </div>
     </div>
 </body>
