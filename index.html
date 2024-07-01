@@ -40,6 +40,11 @@
             font-size: 1.5em;
             margin-bottom: 0.5em;
         }
+        video {
+        max-width: 100%;
+        height: auto;
+        width: 400px; /* Maximum width */
+        }
     </style>
 </head>
 <body>
@@ -54,7 +59,7 @@
         </div>
         <div class="project">
             <div class="project-header">3D Cave Generation</div>
-            <video controls>
+            <video controls autoplay loop muted playsinline>
                 <source src="CaveGeneration.webm" type="video/webm">
                 Your browser does not support the video tag.
             </video>
